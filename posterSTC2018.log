@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/TeX Live for SUSE Linux) (preloaded format=pdflatex 2018.1.23)  13 SEP 2018 19:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/TeX Live for SUSE Linux) (preloaded format=pdflatex 2018.1.23)  13 SEP 2018 19:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1069,28 +1069,19 @@ File: abb/6dimScheme.png Graphic file (type png)
 
 <use abb/6dimScheme.png>
 Package pdftex.def Info: abb/6dimScheme.png used on input line 297.
-(pdftex.def)             Requested size: 266.58311pt x 174.77731pt.
+(pdftex.def)             Requested size: 252.5389pt x 165.56128pt.
+ <abb/fig_1b.pdf, id=36, 244.61388pt x 170.6375pt>
+File: abb/fig_1b.pdf Graphic file (type pdf)
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--297
-[][]
- []
-
-<abb/fig_1b.pdf, id=36, 244.61388pt x 170.6375pt>
+<use abb/fig_1b.pdf>
+Package pdftex.def Info: abb/fig_1b.pdf used on input line 297.
+(pdftex.def)             Requested size: 273.60521pt x 190.87573pt.
 File: abb/fig_1b.pdf Graphic file (type pdf)
  <use abb/fig_1b.pdf>
 Package pdftex.def Info: abb/fig_1b.pdf used on input line 297.
-(pdftex.def)             Requested size: 280.60591pt x 195.76031pt.
+(pdftex.def)             Requested size: 273.60521pt x 190.87573pt.
 
-Overfull \hbox (14.0228pt too wide) in paragraph at lines 297--297
-[][] 
- []
-
-File: abb/fig_1b.pdf Graphic file (type pdf)
-<use abb/fig_1b.pdf>
-Package pdftex.def Info: abb/fig_1b.pdf used on input line 297.
-(pdftex.def)             Requested size: 280.60591pt x 195.76031pt.
-
-Overfull \hbox (14.0228pt too wide) in paragraph at lines 297--297
+Overfull \hbox (21.06631pt too wide) in paragraph at lines 297--297
 [][] 
  []
 
@@ -1302,7 +1293,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  19098 strings out of 493089
  403374 string characters out of 6144303
- 545776 words of memory out of 5000000
+ 545714 words of memory out of 5000000
  22122 multiletter control sequences out of 15000+600000
  62674 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1318,7 +1309,7 @@ texmf/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cms
 y9.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
 texmf/fonts/type1/public/cm-super/sfrm2986.pfb>
-Output written on posterSTC2018.pdf (1 page, 2662038 bytes).
+Output written on posterSTC2018.pdf (1 page, 2662062 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  97 compressed objects within 1 object stream
