@@ -1,0 +1,487 @@
+\documentclass[25pt, portrait]{tikzposter}
+\usepackage{authblk}
+\usepackage{tikz}
+\usepackage{adjustbox}
+\usepackage{textcomp}
+\usepackage{multicol}
+\usepackage{amsmath}
+% \usepackage{amssymb}
+\usetikzlibrary{shapes, arrows.meta}
+\usetheme{Default}
+% \definecolorpalette{Custom}{
+%     % GrayBlueYellow
+%     \definecolor{colorOne}{HTML}{DDDDDD}
+%     \definecolor{colorTwo}{HTML}{153DA6}
+%     \definecolor{colorThree}{HTML}{FFDC00}  
+% }
+\usecolorpalette{Custom}
+  
+
+\title{\parbox{.85\textwidth}{ \begin{center}Multi-dimensional Femtosecond-laser induced dynamics of CO on metals:\end{center}
+\begin{center}\LARGE accounting for electronic friction and surface motion with combined models
+ \end{center}}}
+\author[1]{\underline{Robert Scholz}}
+\author[1]{Peter Saalfrank}
+\author[2]{Ivor Lon\v{c}ari\'c}
+\author[3]{Jean Cristophe Tremblay}
+\author[3]{Gernot F\"uchsel}
+\author[1]{Gereon Flo\ss{}}
+
+\affil[1]{Institut f\"ur Chemie, Universit\"at Potsdam, Karl-Liebknecht-Str. 24-25, 14476 Potsdam, Germany}
+\affil[2]{Ru\dj{}er Bo\v{s}kovi\'{c} Institute, Div. of Theor. Physics, Bijeni\v{c}ka cesta 54, 10000 Zagreb, Croatia}
+\affil[3]{Freie Universit\"at, Inst. f\"ur Chemie und Biochemie, Takustr. 3, 14195 Berlin, Germany}
+
+% \affil[4]{Centro de F\'{\i}sica de Materiales CFM/MPC (CSIC-UPV/EHU), Paseo Manuel de Lardizabal 5, 20018 Donostia-San Sebasti\'an, Spain}
+% \affil[5]{Departamento de F\'{\i}sica de Materiales,
+% Facultad de Qu\'{\i}micas, 
+% Universidad del Pa\'{i}s Vasco (UPV/EHU), Apartado 1072, 20080 San Sebasti\'an, Spain}
+% \affil[6]{Donostia International Physics Center DIPC, P. Manuel de Lardizabal 4, 20018 San Sebasti\'an, Spain}
+
+\makeatletter
+\def\maketitle{\AB@maketitle}
+\makeatother
+\renewcommand{\Authfont}{\Large}
+\renewcommand{\Affilfont}{\normalsize}
+
+% \titlegraphic{\includegraphics{Header.png}}
+\settitle{ \centering \vbox{
+\@titlegraphic \\[\TP@titlegraphictotitledistance] \centering
+\color{titlefgcolor} {\bfseries \huge \sc \@title \par}
+\vspace*{1em}
+{ \@author \par}
+}}
+
+
+\begin{document}
+  \maketitle[width=0.9\textwidth]
+%   \includegraphics{Header.png}
+  \begin{columns}
+    \column{0.42}
+      \block{Introduction}{
+		\innerblock{Motivation}{
+		  \begin{minipage}[t]{.63\colwidth}
+			\begin{itemize}
+			  \item {\bf Aim:} gain more {\bf precise understanding} of {\bf bonding} between {\bf adsorbates} and {\bf metals}
+                            \newline $\Rightarrow$ Fundamentally important for {\bf Catalysis}
+			  \item {\bf Why femtosecond(fs)-lasers?} 
+			  \begin{itemize}
+				\item {\bf cause} highly non-equilibrium {\bf 2-T-states} \newline $\Rightarrow$ {\bf different} processes {\bf than} from {\bf heating}
+				\item further {\bf tool besides STM} and {\bf scattering} 
+				\item {\bf direct} future {\bf applications} possible \newline$\Rightarrow$ {\bf ``femtochemistry''}\cite{bonn:99} 
+			  \end{itemize}
+			\end{itemize}  
+		  \end{minipage}
+		  \begin{adjustbox}{valign=t}
+			\begin{minipage}[t]{.25\colwidth}
+			  \begin{flushright}
+% 				\includegraphics[width=.18\colwidth]{abb/nanofemto.png}
+				%$\,$\\[.6\baselineskip]
+				\includegraphics[width=.22\colwidth]{abb/CO_CO2.png}
+				\begin{small}example for femtochemistry                                                  \end{small}
+			  \end{flushright}
+			\end{minipage}
+		  \end{adjustbox}
+		  \vspace*{-2.2\baselineskip}
+                        \begin{itemize}
+                          \item {\bf Why} study {\bf CO/Ru(001)} or {\bf CO/Cu(100)}? 
+                          \begin{itemize}
+                            \item both are well studied {\bf model systems} 
+                            \item recently, interesting {\bf fs-laser experiments}\cite{nilsson:13}\cite{inoue:16} 
+                            \item moreover, significant {\bf progress} in {\bf theory} for both systems\cite{fuechsel:14}\cite{marqu:10}\newline $\Rightarrow$ Very accurate ({\bf ab-initio} based) {\bf 6-dim. potentials} available
+                            \item also: {\bf theory} has to {\bf start small!} Anyhow, in future {\bf possible} to {\bf describe bigger systems with} the herein {\bf presented methods}
+                          \end{itemize}                   
+                        \end{itemize}
+% 		  \begin{itemize}
+% 			\item specific motivation for system CO/Ru(0001)
+% 			\begin{itemize}
+% 			  \item experimentally well studied regarding fs-laser irradiation, e.g. \cite{funk:00, nilsson:13}
+% 			  \item fulldimensional \textit{ab-initio} potential recently developed in our group\cite{fuechsel:14}
+% 			  \item details of this indicate interpretation of experiment \cite{nilsson:13} may be wrong
+% 			\end{itemize}
+% 		  \end{itemize}		  		    
+		}
+		\vspace{.5cm}
+
+		\innerblock{How do fs-lasers affect adsorbate-metal systems?}{
+% 		  \innerblock{How fs-laser-irradiation affects metal surfaces}{
+% 		  \innerblock{What happens upon FL-irradiation of metal surfaces?}{
+		  \includegraphics[width=.90\colwidth]{abb/modifiedSurfScheme.png}		    
+		  \begin{minipage}[t]{.62\colwidth}
+			\begin{itemize}
+% 			  \item metals: 
+% 			  %can be described as 
+% % 			    consist of an
+% 					ion lattice plus quasi-free electron gas 
+			  \item {\bf laser} is {\bf absorbed by metal electrons} only
+			  \item produced {\bf electron-hole pairs} thermalize quickly  
+					$\Rightarrow$ {\bf ``hot''} Fermi-Dirac-distribution
+% 				  \item Fermi-Dirac schon hier?
+						% \vbox syntax? (for the graphic)
+			  \item {\bf electrons transfer} part of {\bf energy} to ion {\bf lattice}, via \raisebox{-.18\baselineskip}{\includegraphics[height=.8\baselineskip]{abb/one.png}}
+			  \hspace{-0.4cm} \textbf{electron-phonon coupling}%\newline (phonons = lattice vibrations; quasi-particles)
+                          \item {\bf equilibration} complete {\bf within ps}-timescale			
+			  \item[$\Rightarrow$] {\bf Thus}, with {\bf fs-lasers two temperatures}:
+			  \begin{itemize}
+				\item $T_\mathrm{el}$ - electron temperature
+				\item $T_\mathrm{ph}$ - phonon temperature
+% 					\item Two-Temperature Model (TTM)\cite{anisimov:74}
+			  \end{itemize}
+			  \item {\bf both couple to adsorbed molecule}
+                          \item described by {\bf Two-Temperature Model} \cite{anisimov:74} 
+			\end{itemize}
+		  \end{minipage}
+		  \begin{adjustbox}{valign=t}
+			\begin{minipage}[t]{.28\colwidth}
+			  \begin{flushright}
+% 				\includegraphics[width=.18\colwidth]{abb/elgas.png}$\,$\\[.2\baselineskip]
+				\includegraphics[width=.24\colwidth]{abb/fermi.png}\vspace*{-.3\baselineskip}\\
+				\begin{small}Fermi-Dirac-Distribution                                                   \end{small}\vspace*{.5\baselineskip}\\
+				\includegraphics[width=.26\colwidth]{abb/TTM_1pulse.eps}
+			  \end{flushright}
+			\end{minipage}
+		  \end{adjustbox}
+% 		  \begin{itemize}
+% % 			\item can be simulated using a Two-Temperature Model (2TM)%(TTM)
+% % 				  \cite{anisimov:74} (see right)
+% 				  %consisting of two differential Equations 
+% 	  
+% 		  \end{itemize}
+		}
+% 		  \includegraphics[width=.4\colwidth]{abb/TTM_1pulse.eps}
+	  }
+	\column{0.58}
+	  \block{Models and Methods}{
+		\innerblock{Six-dimensional Potential Energy Surface (6D PES)\cite{fuechsel:14}}{
+		  \begin{minipage}[t]{.66\colwidth}
+			\begin{itemize}
+			  \item Basis for dynamics: {\bf precomputed PES} from DFT (rPBE + D2) 
+			\end{itemize}
+			\begin{adjustbox}{valign=t}
+			  \begin{minipage}[t]{.19\colwidth}
+% 				  \vspace*{.5\baselineskip}
+				\includegraphics[width=.22\colwidth]{abb/6dimScheme.png}
+			  \end{minipage}
+			\end{adjustbox}
+			\begin{minipage}[t]{.46\colwidth}
+			  \begin{itemize}
+				\item {\bf all 6 dimensions} of the adsorbate
+				\item {\bf analytical} PES and gradients $\Rightarrow$ {\bf very fast} % (once constructed)
+				\item[$\Rightarrow$] {\bf number}, length of {\bf trajectories} can be {\bf large} 
+				\item {\bf downsides}: -- surface frozen $\Rightarrow$ {\bf no phonons} 
+				\newline \hspace*{5.5cm} -- had to be constructed first
+			  \end{itemize}
+			\end{minipage}
+		  \end{minipage}
+		  \begin{adjustbox}{valign=t}
+			\begin{minipage}[t]{.35\colwidth}
+			  \hspace*{-.01\colwidth}\includegraphics[width=.28\colwidth]{abb/fig_1b.pdf}\vspace*{-0.7\baselineskip}\\
+			  \hspace*{.05\colwidth}\begin{small}Potential for CO/Ru(001)                                          \end{small}
+			\end{minipage}
+		  \end{adjustbox}  
+		}
+		\vspace{.5cm}
+	  
+		\innerblock{Two-Temperature Model (2TM)\cite{anisimov:74}}{
+		  \begin{minipage}[t]{.68\colwidth}
+			\begin{itemize}
+			  \item describes {\bf interaction} of {\bf electrons} with {\bf phonons} and {\bf laser} 
+			\end{itemize}			  
+			\begin{center}
+			  \includegraphics[width=.65\colwidth]{abb/2TM_equs.png}
+			\end{center}
+		  \end{minipage}
+		  \begin{adjustbox}{valign=t}
+			\begin{minipage}[t]{.25\colwidth}
+			  \includegraphics[width=.25\colwidth]{abb/Part1SurfScheme.png}
+% 				\includegraphics[width=.3\colwidth]{abb/2TM_equs.png}
+			\end{minipage}
+		  \end{adjustbox}
+% 			\end{adjustbox}
+% 		  \vspace{-1.2\baselineskip}
+		  \begin{itemize}
+			\item[$\Rightarrow$] {\bf get $\boldsymbol{T}_\mathbf{el}$ and $\boldsymbol{T}_\mathbf{ph}$ as $\boldsymbol{f(z,t)}$} from laser parameters and material properties 
+% 			{\normalsize
+% 			\begin{itemize}
+% 			  \begin{minipage}[t]{.52\colwidth}
+% 				\item laser wavelength $\lambda$ (affects penetretion depth into material)
+% 				\item (effective) absorbed fluence $F$ (energy/area)
+% 				\item pulse duration $\tau$ (all three appear in the ``source term'' $S(z, t)$)
+% 			  \end{minipage}
+% 			  \begin{minipage}[t]{.5\colwidth}
+% 				\item electron and phonon heat capacities $C_\mathrm{el}$ and $C_\mathrm{ph}$
+% 				\item electron heat conductivity $\kappa$ 			
+% 				\item electron-phonon coupling constant $g$
+% 			  \end{minipage}
+% 			\end{itemize}				
+% 			}
+		  \end{itemize}	
+
+		}
+		\vspace{.5cm}
+		  
+		\innerblock{Electronic Friction: Langevin Dynamics\cite{headgordon:95} and Local~Density~Friction~Approximation~(LDFA)\cite{juaristi:08}}{
+		  \begin{adjustbox}{valign=t}
+			\begin{minipage}[t]{.26\colwidth}
+			  \includegraphics[width=.25\colwidth]{abb/Part2SurfScheme.png}
+% 				\includegraphics[width=.3\colwidth]{abb/2TM_equs.png}
+			\end{minipage}
+		  \end{adjustbox}
+		  \begin{minipage}[t]{.6\colwidth}
+			\begin{itemize}
+			  \item Langevin equation of motion, a stochastical differential equation:%\\[-.9\baselineskip]
+% 				\vspace{.2\baselineskip}
+% 				\item describes interaction of  electron-hole-pairs with molecule
+			\end{itemize}
+			\vspace*{-.1\baselineskip}			  
+			\includegraphics[width=.65\colwidth]{abb/Langevin_eq.png}
+		  \end{minipage}
+		  \vspace*{-.3\baselineskip}
+		  \begin{itemize}
+			\item describes {\bf movement of CO} and {\bf interaction with electron-hole pairs} (friction and excitation)
+			\item {\bf Local Density Friction Approx.} (LDFA): simple {\bf model} to get {\bf friction coefficients} $\boldsymbol{\eta}_{\mathbf{el},\boldsymbol{k}}$
+			\begin{itemize}
+% 			    \item ``Local Density'' $\Rightarrow$ homogenous free electron gas (FEG)
+			  \item {\bf Atom $\boldsymbol{k}$ embedded in free electron gas} with density of bare surface at current position $\underline{r}_k$
+			\end{itemize}
+			  \item {\bf Random forces} $\underline{\boldsymbol{R}}_{\mathbf{el},\boldsymbol{k}}$: white noise, {\bf dependent on} both $\boldsymbol{\eta}_{\mathbf{el},\boldsymbol{k}}$ (from LDFA) and $\boldsymbol{T}_\mathbf{el}$ (from 2TM)
+			  \begin{itemize}
+				\item justified by {\bf 2. fluctuation dissipation theorem}\cite{kubo:66} (relating friction and thermal movement) 
+			  \end{itemize}  
+		  \end{itemize}
+
+% 			\begin{adjustbox}{valign=t}
+% 			  \begin{minipage}[t]{.5\colwidth}
+% % 				\includegraphics[width=.15\colwidth]{abb/Part1SurfScheme.png}\\[.3\baselineskip]
+% 				\includegraphics[width=.5\colwidth]{abb/Langevin_eq.png}
+% 		      \end{minipage}
+% 			\end{adjustbox}
+		}
+		\vspace{.5cm}
+		
+		\innerblock{Inclusion of Phonons: Generalized Langevin Oscillator(GLO)-model\cite{busnengo:05}}{
+		  \begin{adjustbox}{valign=t}
+			\begin{minipage}[t]{.24\colwidth}
+			  \includegraphics[width=.25\colwidth]{abb/Part3SurfScheme.png}
+% 				\includegraphics[width=.3\colwidth]{abb/2TM_equs.png}
+			\end{minipage}
+		  \end{adjustbox}
+		  \begin{minipage}[t]{.7\colwidth}
+			\begin{itemize}
+			  \item influence of {\bf phonons} effectifely {\bf modeled} ({\bf augments frozen surface})
+			  \item {\bf entire surface} understood as {\bf 3D oscillator} (coords. $\underline{r}_s$, mass 1 atom)
+			  \item {\bf coupling} to molecule {\bf via shifting}: %of the PES:
+			  $\; V_\mathrm{GLO}(\underline{r}_\mathrm{C},\underline{r}_\mathrm{O};\underline{r}_s)=V(\underline{r}_\mathrm{C}-\underline{r}_s,\underline{r}_\mathrm{O}-\underline{r}_s)$ 
+			  \item additionally coupled to {\bf ghost oscillator} $\underline{r}_g$, {\bf models} influence of {\bf bulk} 
+			  \begin{itemize}
+				\item ghost oscillator is subject to friction $\eta_\mathrm{ph}$ and random forces $\underline{R}_\mathrm{ph}(T_\mathrm{ph})$
+			  \end{itemize}
+			\end{itemize}
+% 			  {\Large
+% 			  \begin{equation*}
+% 			    V_\mathrm{GLO}(\underline{r}_\mathrm{C},\underline{r}_\mathrm{O};\underline{r}_s)=V(\underline{r}_\mathrm{C}-\underline{r}_s,\underline{r}_\mathrm{O}-\underline{r}_s) 
+% 			  \end{equation*}
+% 			  }
+% 			  \vspace*{-.1\baselineskip}			  
+% 			  \includegraphics[width=.65\colwidth]{abb/Langevin_eq.png}
+		  \end{minipage}
+		}
+	  }	
+  \end{columns}
+%     \vspace*{1\baselineskip}
+  \begin{columns}
+  \column{.66}
+  \block[titleoffsety=3cm,bodyoffsety=3cm,titleoffsetx=-.182\colwidth,titlewidthscale=.62,]{Results}{
+	\begin{adjustbox}{valign=t}
+	\begin{minipage}[t]{.49\colwidth}
+	  \innerblock{Desorption (Data for Ru)}{
+% 		\begin{itemize}
+% 		  \item 
+% 		\end{itemize}
+		\begin{adjustbox}{valign=t}
+		  \begin{minipage}[t]{.26\colwidth}
+			\includegraphics[width=.26\colwidth]{abb/fig_8.png}
+		  \end{minipage}
+		\end{adjustbox} 
+		\begin{minipage}[t]{.2\colwidth}
+		  \begin{itemize}
+		    \item desorption mainly during first 50 ps
+		    \item fluence dependence of desorption yield close to experiment
+% 		    \item no ``precursor state'' as suggested by \cite{nilsson:13}
+		    \item no barrier in PMF
+		  \end{itemize}
+		\end{minipage}
+
+
+		\includegraphics[width=.24\colwidth]{abb/fig_9.eps}
+		\includegraphics[width=.19\colwidth]{abb/fig_11a.eps}		
+	  }	  
+	\end{minipage}
+	\end{adjustbox}
+	\hspace*{.005\colwidth}
+	\begin{adjustbox}{valign=t}
+	  \begin{minipage}[t]{.46\colwidth}
+	  	\innerblock{Diffusion (Data for Ru, but Cu similar)}{
+		  \begin{adjustbox}{valign=t}
+			\begin{minipage}[t]{.26\colwidth}	  	
+			  \includegraphics[width=.26\colwidth]{abb/Trajektorie.png}
+			\end{minipage}
+		  \end{adjustbox} 
+		  \begin{minipage}[t]{.16\colwidth}
+			\begin{itemize}
+			  \item typical trajectory:
+			   hops between top \\sites and vibration 
+			  \item increase in $\theta$-angle
+					when CO moves away from top
+			  \item overall, very large diffusion 
+			\end{itemize}
+		  \end{minipage}
+
+		  
+
+
+
+		  \vspace{.5\baselineskip}
+		  \begin{itemize}
+		    \item also, nonisotropic diffusion behaviour observed:
+		    \item dynamical trapping effect at hcp site predicted
+% 		    \item[$\Rightarrow$] possible alternative explanation to ``precursor state'' \cite{nilsson:13}
+		  \end{itemize}
+
+		  \includegraphics[width=.445\colwidth]{abb/movie.png}
+		}	    
+	  \end{minipage}
+	\end{adjustbox}	  
+	\innerblock{Vibrations (Data for Cu)}{
+          \begin{adjustbox}{valign=t}          
+            \begin{minipage}[t]{.26\colwidth}~\\
+              \begin{center}\begin{itemize}
+                              \item Frequency-shift from \newline time-resolved SFG    
+                            \end{itemize}
+           \end{center}
+            \end{minipage}
+          \end{adjustbox}
+          \begin{adjustbox}{valign=t}          
+            \begin{minipage}[t]{.2\colwidth}
+              \includegraphics[height=4\baselineskip]{abb/Inoue.png}
+            \end{minipage}
+          \end{adjustbox}          
+          \begin{adjustbox}{valign=t}          
+            \begin{minipage}[t]{.2\colwidth}
+              \includegraphics[height=4\baselineskip]{abb/Fourier.pdf}  
+            \end{minipage}
+          \end{adjustbox}         
+          \begin{adjustbox}{valign=t}          
+            \begin{minipage}[t]{.26\colwidth}~\\
+              \begin{center}\begin{itemize}
+                              \item Preliminary results \newline from our dynamics  
+                            \end{itemize}
+
+             \end{center} 
+            \end{minipage}
+          \end{adjustbox}          
+	}
+  }
+  \column{.33}
+  \block{}{
+	\innerblock{Conclusions}{
+	\begin{itemize}
+	  \item 6D Langevin dynamics of CO on Ru and Cu
+	  \item based on first principles, no ``free'' parameters
+	  \item accounting for (via LDFA) electronic friction, hot electron excitation and (via GLO) substrate motion
+	  \item allows for detailed time- and space-resolved insights
+	  \item no physisorbed state, molecules desorp directly 
+	\end{itemize}
+	}
+	\vspace{1.7cm}
+	\innerblock{Outlook}{
+	\begin{itemize}
+% 	  \item 
+	  \item better electonic friction ($\eta(T_\mathrm{el})$ and beyond LDFA)
+	  $\Rightarrow$ Long term goal: use tensorial friction (exact)
+	  \item non-equilibrium lattice model (NLM) instead 2TM 
+	  \item simulate other coveages (bigger super cells)
+	  \item simulate bigger systems (CO + H; hydrocarbons) 
+	  \item include interaction between adsorbate molecules
+	\end{itemize}
+
+	}
+  }
+  \end{columns}
+      %   \bibliography{/perm/scholz/phd/lit/biblio}
+  \block{}{
+    \begin{multicols}{3}\footnotesize
+      \begin{thebibliography}{X}\small
+		\bibitem{bonn:99}
+		M. Bonn, S. Funk, Ch. Hess, D.N. Denzler %,
+		\emph{et al.}, %, C. Stampfl, M. Scheffler, M. Wolf, G. Ertl,  
+		\emph{Science} \textbf{285}, 1042 (1999).
+
+		
+% 		\bibitem{funk:00}
+% % 		S. Funk, M. Bonn, D. N. Denzler, C. Hess \emph{et al.}, 
+% 		S. Funk, M. Bonn, D.N. Denzler, C. Hess \emph{et al.}, %M. Wolf and G. Ertl, 
+% 		\emph{J.Chem.Phys.} \textbf{112}, 9888 (2000).
+		
+		\bibitem{nilsson:13}
+		  M. Dell'Angela, T. Anniyev, M. Beye, R. Coffee \emph{et al.}, 
+% 		  M. Dell'Angela, T. Anniyev, M. Beye, R. Coffee, A. F\"ohlisch \emph{et al.}, 
+		  \emph{Science} \textbf{339}, 1302 (2013).
+		
+		\bibitem{inoue:16} 
+                  K. Inoue, K. Watanabe, T. Sugimoto \emph{et al.},  \emph{Phys.Rev.Lett.} \textbf{117}, 186101 (2016).
+		
+		\bibitem{fuechsel:14}
+		  G. Füchsel, J.C. Tremblay, and P. Saalfrank, 
+		  \emph{J.Chem.Phys.} \textbf{141}, 094704 (2014).
+		
+		\bibitem{marqu:10}
+                  R. Marquardt, F. Cuvelier, R.O. Olsen \emph{et al.}, \emph{J.Chem.Phys.} \textbf{132}, 074108 (2010).
+		
+		\bibitem{anisimov:74}
+		  S.I. Anisimov, B.L. Kapeliovich and T.L. Perelman,
+		  \emph{Sov.Phys.-JETP} \textbf{39}, 375 (1974).
+		  
+		\bibitem{headgordon:95}  
+		M. Head-Gordon and J.C. Tully, \emph{J.Chem.Phys.} \textbf{103}, 10137 (1995).
+		
+		\bibitem{juaristi:08}
+		J.I. Juaristi, M. Alducin, R. Díez Muiño \emph{et al.}, 
+% 		J. I. Juaristi, M. Alducin, R. Díez Muiño, H. F. Busnengo and A. Salin, 
+		\emph{Phys.Rev.Lett.} \textbf{100}, 116102 (2008).
+		
+		\bibitem{kubo:66}
+                R. Kubo, \emph{Rep.Prog.Phys.} \textbf{29}, 255 (1966).
+		
+% 		\bibitem{adelman:76}
+% 		S.A. Adelman and J.D. Doll, \emph{J.Chem.Phys.} \textbf{64}, 2375 (1976).
+		
+% 		\bibitem{tully:80}
+% 		J.C. Tully, \emph{J.Chem.Phys.} \textbf{73}, 1975 (1980).
+		
+		\bibitem{busnengo:05}
+		H.F. Busnengo, M.A. Di Césare, W. Dong \emph{et al.},
+		\emph{Phys.Rev.B} \textbf{72}, 125411 (2005).
+		
+
+		
+      \end{thebibliography}  
+    \end{multicols}
+  }
+\end{document}
+
+
+% \makeatletter
+% \renewenvironment{tikzfigure}[1][]{
+%   \def \rememberparameter{#1}
+%   \vspace{10pt}
+%   \refstepcounter{figurecounter}
+%   \begin{center}
+%   }{
+%     \ifx\rememberparameter\@empty
+%     \else %nothing
+%     \\[10pt]
+%     {\large Fig.~\thefigurecounter: \rememberparameter}
+%     \fi
+%   \end{center}
+% }
+% \makeatother
