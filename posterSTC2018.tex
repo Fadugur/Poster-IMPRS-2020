@@ -156,33 +156,40 @@
 	  }
 	\column{0.62}
 	  \block{Models and Methods}{
-		\innerblock{Six-dimensional Potential Energy Surface (6D PES)\cite{fuechsel:14}}{
-		  \begin{minipage}[t]{.66\colwidth}
-			\begin{itemize}
-			  \item Basis for dynamics: {\bf precomputed PES} from DFT (rPBE + D2) 
-			\end{itemize}
+		\innerblock{Basis of the Dynamics: the Six-dimensional Potential Energy Surfaces (PES)\cite{fuechsel:14}\cite{marqu:10}}{
+% 		  \begin{minipage}[t]{.52\colwidth}
 			\begin{adjustbox}{valign=t}
-			  \begin{minipage}[t]{.19\colwidth}
+			  \begin{minipage}[t]{.18\colwidth}
 % 				  \vspace*{.5\baselineskip}
-				\includegraphics[width=.22\colwidth]{abb/6dimScheme.png}
+				\includegraphics[width=.18\colwidth]{abb/6dimScheme.png}
+				\begin{small} 
+                                  The six dimensions
+                                \end{small}
 			  \end{minipage}
+
 			\end{adjustbox}
-			\begin{minipage}[t]{.46\colwidth}
+			\begin{minipage}[t]{.33\colwidth}
 			  \begin{itemize}
-				\item {\bf all 6 dimensions} of the adsorbate
-				\item {\bf analytical} PES and gradients $\Rightarrow$ {\bf very fast} % (once constructed)
-				\item[$\Rightarrow$] {\bf number}, length of {\bf trajectories} can be {\bf large} 
-				\item {\bf downsides}: -- surface frozen $\Rightarrow$ {\bf no phonons} 
-				\newline \hspace*{5.5cm} -- had to be constructed first
+				\item {\bf precomputed} with DFT (GGA)
+				\item all {\bf six dimensions} of the adsorbate 
+				\item {\bf analytical} $\Rightarrow$ {\bf very fast} % (once constructed)
+				\item[$\Rightarrow$] {\bf many trajectories} possible 
+				\item but: surface frozen $\Rightarrow$ {\bf no phonons} 
 			  \end{itemize}
 			\end{minipage}
-		  \end{minipage}
+% 		  \end{minipage}
 		  \begin{adjustbox}{valign=t}
-			\begin{minipage}[t]{.35\colwidth}
-			  \hspace*{-.01\colwidth}\includegraphics[width=.28\colwidth]{abb/fig_1b.pdf}\vspace*{-0.7\baselineskip}\\
-			  \hspace*{.05\colwidth}\begin{small}Potential for CO/Ru(001)                                          \end{small}
+			\begin{minipage}[t]{.20\colwidth}
+			  \includegraphics[width=.20\colwidth]{abb/fig_1b.pdf}\vspace*{-0.7\baselineskip}\\
+			  \hspace*{.025\colwidth}\begin{small}Potential for CO/Ru(001)                                          \end{small}
 			\end{minipage}
-		  \end{adjustbox}  
+		  \end{adjustbox}
+		  \begin{adjustbox}{valign=t}
+                        \begin{minipage}[t]{.20\colwidth}
+                          \includegraphics[width=.20\colwidth]{abb/fig_1b.pdf}\vspace*{-0.7\baselineskip}\\
+                          \hspace*{.025\colwidth}\begin{small}Potential for CO/Ru(001)                                          \end{small}
+                        \end{minipage}
+                  \end{adjustbox}
 		}
 		\vspace{.5cm}
 	  
@@ -249,9 +256,6 @@
 			  \item {\bf Atom $\boldsymbol{k}$ embedded in free electron gas} with density of bare surface at current position $\underline{r}_k$
 			\end{itemize}
 			  \item {\bf Random forces} $\underline{\boldsymbol{R}}_{\mathbf{el},\boldsymbol{k}}$: white noise, {\bf dependent on} both $\boldsymbol{\eta}_{\mathbf{el},\boldsymbol{k}}$ (from LDFA) and $\boldsymbol{T}_\mathbf{el}$ (from 2TM)
-			  \begin{itemize}
-				\item justified by {\bf 2. fluctuation dissipation theorem}\cite{kubo:66} (relating friction and thermal movement) 
-			  \end{itemize}  
 		  \end{itemize}
 
 % 			\begin{adjustbox}{valign=t}
@@ -453,9 +457,6 @@
 		J.I. Juaristi, M. Alducin, R. Díez Muiño \emph{et al.}, 
 % 		J. I. Juaristi, M. Alducin, R. Díez Muiño, H. F. Busnengo and A. Salin, 
 		\emph{Phys.Rev.Lett.} \textbf{100}, 116102 (2008).
-		
-		\bibitem{kubo:66}
-                R. Kubo, \emph{Rep.Prog.Phys.} \textbf{29}, 255 (1966).
 		
 % 		\bibitem{adelman:76}
 % 		S.A. Adelman and J.D. Doll, \emph{J.Chem.Phys.} \textbf{64}, 2375 (1976).
