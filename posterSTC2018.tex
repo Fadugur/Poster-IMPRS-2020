@@ -56,39 +56,38 @@
   \maketitle[width=0.9\textwidth]
 %   \includegraphics{Header.png}
   \begin{columns}
-    \column{0.42}
+    \column{0.38}
       \block{Introduction}{
 		\innerblock{Motivation}{
-		  \begin{minipage}[t]{.63\colwidth}
+		  \begin{minipage}[t]{.62\colwidth}
 			\begin{itemize}
-			  \item {\bf Aim:} gain more {\bf precise understanding} of {\bf bonding} between {\bf adsorbates} and {\bf metals}
-                            \newline $\Rightarrow$ Fundamentally important for {\bf Catalysis}
+			  \item {\bf Aim:} gain {\bf precise understanding} of \newline\hspace*{3cm}{\bf adsorbate bonding} on {\bf metals}
+                            \newline\hspace*{2.7 cm} $\Rightarrow$ Important for {\bf Catalysis}
 			  \item {\bf Why femtosecond(fs)-lasers?} 
 			  \begin{itemize}
-				\item {\bf cause} highly non-equilibrium {\bf 2-T-states} \newline $\Rightarrow$ {\bf different} processes {\bf than} from {\bf heating}
-				\item further {\bf tool besides STM} and {\bf scattering} 
+				\item {\bf produce} non-equilibrium {\bf 2-T-states} \newline $\Rightarrow$ {\bf different than} normal {\bf heating}
+				\item further {\bf tool} besides STM and scattering 
 				\item {\bf direct} future {\bf applications} possible \newline$\Rightarrow$ {\bf ``femtochemistry''}\cite{bonn:99} 
 			  \end{itemize}
 			\end{itemize}  
 		  \end{minipage}
 		  \begin{adjustbox}{valign=t}
-			\begin{minipage}[t]{.25\colwidth}
+			\begin{minipage}[t]{.27\colwidth}
 			  \begin{flushright}
 % 				\includegraphics[width=.18\colwidth]{abb/nanofemto.png}
 				%$\,$\\[.6\baselineskip]
-				\includegraphics[width=.22\colwidth]{abb/CO_CO2.png}
-				\begin{small}example for femtochemistry                                                  \end{small}
+				\includegraphics[width=.24\colwidth]{abb/CO_CO2.png}
+				\begin{small}Femtochemistry example                                                \end{small}
 			  \end{flushright}
 			\end{minipage}
 		  \end{adjustbox}
-		  \vspace*{-2.2\baselineskip}
+		  \vspace*{-2.3\baselineskip}
                         \begin{itemize}
-                          \item {\bf Why} study {\bf CO/Ru(001)} or {\bf CO/Cu(100)}? 
+                          \item {\bf Why CO/Ru(001)} and {\bf CO/Cu(100)}? 
                           \begin{itemize}
                             \item both are well studied {\bf model systems} 
                             \item recently, interesting {\bf fs-laser experiments}\cite{nilsson:13}\cite{inoue:16} 
-                            \item moreover, significant {\bf progress} in {\bf theory} for both systems\cite{fuechsel:14}\cite{marqu:10}\newline $\Rightarrow$ Very accurate ({\bf ab-initio} based) {\bf 6-dim. potentials} available
-                            \item also: {\bf theory} has to {\bf start small!} Anyhow, in future {\bf possible} to {\bf describe bigger systems with} the herein {\bf presented methods}
+                            \item also, {\bf ab-initio} based {\bf 6-dim. potentials} available \cite{fuechsel:14}\cite{marqu:10}
                           \end{itemize}                   
                         \end{itemize}
 % 		  \begin{itemize}
@@ -106,50 +105,56 @@
 % 		  \innerblock{How fs-laser-irradiation affects metal surfaces}{
 % 		  \innerblock{What happens upon FL-irradiation of metal surfaces?}{
 		  \includegraphics[width=.90\colwidth]{abb/modifiedSurfScheme.png}		    
-		  \begin{minipage}[t]{.62\colwidth}
+		  \begin{minipage}[t]{.60\colwidth}
 			\begin{itemize}
 % 			  \item metals: 
 % 			  %can be described as 
 % % 			    consist of an
 % 					ion lattice plus quasi-free electron gas 
-			  \item {\bf laser} is {\bf absorbed by metal electrons} only
-			  \item produced {\bf electron-hole pairs} thermalize quickly  
-					$\Rightarrow$ {\bf ``hot''} Fermi-Dirac-distribution
+			  \item only {\bf electrons} of metal {\bf absorb laser}
+			  \item {\bf electron-hole pairs} thermalize fast
+					\newline$\Rightarrow$ {\bf ``hot''} Fermi-Dirac-distribution
 % 				  \item Fermi-Dirac schon hier?
 						% \vbox syntax? (for the graphic)
-			  \item {\bf electrons transfer} part of {\bf energy} to ion {\bf lattice}, via \raisebox{-.18\baselineskip}{\includegraphics[height=.8\baselineskip]{abb/one.png}}
+			  \item electrons transfer energy to ion lattice, via \raisebox{-.18\baselineskip}{\includegraphics[height=.8\baselineskip]{abb/one.png}}
 			  \hspace{-0.4cm} \textbf{electron-phonon coupling}%\newline (phonons = lattice vibrations; quasi-particles)
-                          \item {\bf equilibration} complete {\bf within ps}-timescale			
-			  \item[$\Rightarrow$] {\bf Thus}, with {\bf fs-lasers two temperatures}:
+                          \item {\bf equilibration within  ps-timescale}			
+			  \item[$\Rightarrow$] Thus, for few ps {\bf two temperatures}:
 			  \begin{itemize}
 				\item $T_\mathrm{el}$ - electron temperature
 				\item $T_\mathrm{ph}$ - phonon temperature
 % 					\item Two-Temperature Model (TTM)\cite{anisimov:74}
 			  \end{itemize}
-			  \item {\bf both couple to adsorbed molecule}
-                          \item described by {\bf Two-Temperature Model} \cite{anisimov:74} 
+			  \item both can {\bf couple} to adsorbed {\bf molecule}
+			  \item low electron heat {\bf capacity} $\Rightarrow$ $T_\mathrm{el}$ higher
 			\end{itemize}
+% 			\vspace*{-0.6\baselineskip}
+% 			\begin{flushright}
+%                           \begin{small}
+%                             \hspace*{1cm} Two-Temperature Model (2TM) \cite{anisimov:74} 
+%                           \end{small}
+%                         \end{flushright}
 		  \end{minipage}
 		  \begin{adjustbox}{valign=t}
 			\begin{minipage}[t]{.28\colwidth}
 			  \begin{flushright}
 % 				\includegraphics[width=.18\colwidth]{abb/elgas.png}$\,$\\[.2\baselineskip]
-				\includegraphics[width=.24\colwidth]{abb/fermi.png}\vspace*{-.3\baselineskip}\\
+				\includegraphics[width=.27\colwidth]{abb/fermi.png}\vspace*{-.3\baselineskip}\\
 				\begin{small}Fermi-Dirac-Distribution                                                   \end{small}\vspace*{.5\baselineskip}\\
-				\includegraphics[width=.26\colwidth]{abb/TTM_1pulse.eps}
+				\includegraphics[width=.29\colwidth]{abb/TTM_1pulse.eps}
 			  \end{flushright}
 			\end{minipage}
 		  \end{adjustbox}
-% 		  \begin{itemize}
-% % 			\item can be simulated using a Two-Temperature Model (2TM)%(TTM)
-% % 				  \cite{anisimov:74} (see right)
-% 				  %consisting of two differential Equations 
-% 	  
-% 		  \end{itemize}
+%  		  \begin{itemize}
+%                     \item can be simulated by {\bf Two-Temperature Model} \cite{anisimov:74} 
+%  		  % % 			\item can be simulated using a Two-Temperature Model (2TM)%(TTM)
+% % % 				  \cite{anisimov:74} (see right)
+% % 				  %consisting of two differential Equations 
+%                	  \end{itemize}
 		}
 % 		  \includegraphics[width=.4\colwidth]{abb/TTM_1pulse.eps}
 	  }
-	\column{0.58}
+	\column{0.62}
 	  \block{Models and Methods}{
 		\innerblock{Six-dimensional Potential Energy Surface (6D PES)\cite{fuechsel:14}}{
 		  \begin{minipage}[t]{.66\colwidth}
