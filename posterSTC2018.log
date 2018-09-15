@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/TeX Live for SUSE Linux) (preloaded format=pdflatex 2018.1.23)  15 SEP 2018 08:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/TeX Live for SUSE Linux) (preloaded format=pdflatex 2018.1.23)  15 SEP 2018 11:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1152,16 +1152,6 @@ Overfull \hbox (4.39998pt too wide) in paragraph at lines 307--307
 [][] 
  []
 
-<abb/fig_8.png, id=43, 149.16528pt x 104.93604pt>
-File: abb/fig_8.png Graphic file (type png)
- <use abb/fig_8.png>
-Package pdftex.def Info: abb/fig_8.png used on input line 402.
-(pdftex.def)             Requested size: 428.85211pt x 301.70952pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--402
-[]\T1/aer/m/n/29.86 fluence de-pen-dence of
- []
-
 Package epstopdf Info: Source file: <abb/fig_9.eps>
 (epstopdf)                    date: 2016-07-19 10:41:51
 (epstopdf)                    size: 18777 bytes
@@ -1170,107 +1160,125 @@ Package epstopdf Info: Source file: <abb/fig_9.eps>
 (epstopdf)                    size: 11350 bytes
 (epstopdf)             Command: <repstopdf --outfile=abb/fig_9-eps-converted-to
 .pdf abb/fig_9.eps>
-(epstopdf)             \includegraphics on input line 402.
+(epstopdf)             \includegraphics on input line 437.
 Package epstopdf Info: Output file is already uptodate.
-<abb/fig_9-eps-converted-to.pdf, id=44, 473.77pt x 354.32375pt>
+<abb/fig_9-eps-converted-to.pdf, id=43, 473.77pt x 354.32375pt>
 File: abb/fig_9-eps-converted-to.pdf Graphic file (type pdf)
 
 <use abb/fig_9-eps-converted-to.pdf>
-Package pdftex.def Info: abb/fig_9-eps-converted-to.pdf used on input line 402.
+Package pdftex.def Info: abb/fig_9-eps-converted-to.pdf used on input line 437.
 
-(pdftex.def)             Requested size: 395.8809pt x 296.08363pt.
-Package epstopdf Info: Source file: <abb/fig_11a.eps>
-(epstopdf)                    date: 2016-07-19 10:41:51
-(epstopdf)                    size: 25081 bytes
-(epstopdf)             Output file: <abb/fig_11a-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-09-02 15:01:38
-(epstopdf)                    size: 10829 bytes
-(epstopdf)             Command: <repstopdf --outfile=abb/fig_11a-eps-converted-
-to.pdf abb/fig_11a.eps>
-(epstopdf)             \includegraphics on input line 402.
-Package epstopdf Info: Output file is already uptodate.
+(pdftex.def)             Requested size: 362.88454pt x 271.4028pt.
 
-<abb/fig_11a-eps-converted-to.pdf, id=45, 368.37625pt x 351.3125pt>
-File: abb/fig_11a-eps-converted-to.pdf Graphic file (type pdf)
+<abb/fig_8.png, id=44, 149.16528pt x 104.93604pt>
+File: abb/fig_8.png Graphic file (type png)
+ <use abb/fig_8.png>
+Package pdftex.def Info: abb/fig_8.png used on input line 437.
+(pdftex.def)             Requested size: 362.88454pt x 255.29895pt.
 
-<use abb/fig_11a-eps-converted-to.pdf>
-Package pdftex.def Info: abb/fig_11a-eps-converted-to.pdf used on input line 40
-2.
-(pdftex.def)             Requested size: 313.40257pt x 298.88506pt.
-
-Overfull \hbox (4.39998pt too wide) in paragraph at lines 402--402
-[][] 
- []
-
-<abb/Trajektorie.png, id=46, 362.09505pt x 254.06258pt>
-File: abb/Trajektorie.png Graphic file (type png)
-
-<use abb/Trajektorie.png>
-Package pdftex.def Info: abb/Trajektorie.png used on input line 402.
-(pdftex.def)             Requested size: 428.85211pt x 300.89995pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--402
-[]\T1/aer/m/n/29.86 typical tra-jec-tory:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--402
-\T1/aer/m/n/29.86 when CO moves
- []
-
-
-Underfull \hbox (badness 1783) in paragraph at lines 402--402
-[]\T1/aer/m/n/29.86 overall, very large
- []
-
-<abb/movie.png, id=47, 256.0767pt x 43.8438pt>
-File: abb/movie.png Graphic file (type png)
- <use abb/movie.png>
-Package pdftex.def Info: abb/movie.png used on input line 402.
-(pdftex.def)             Requested size: 734.02446pt x 125.68126pt.
-
-Overfull \hbox (4.4pt too wide) in paragraph at lines 402--402
+Overfull \hbox (16.4856pt too wide) in paragraph at lines 437--437
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--402
+Underfull \hbox (badness 10000) in paragraph at lines 437--437
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--402
-
+Overfull \hbox (16.4856pt too wide) in paragraph at lines 437--437
+[] 
  []
 
-<abb/Inoue.png, id=48, 895.345pt x 821.0675pt>
+<abb/Z-Histogramme.png, id=45, 390.258pt x 383.031pt>
+File: abb/Z-Histogramme.png Graphic file (type png)
+
+<use abb/Z-Histogramme.png>
+Package pdftex.def Info: abb/Z-Histogramme.png used on input line 437.
+(pdftex.def)             Requested size: 412.3665pt x 404.7368pt.
+
+Overfull \hbox (4.39998pt too wide) in paragraph at lines 437--437
+[][] 
+ []
+
+<abb/Inoue.png, id=46, 895.345pt x 821.0675pt>
 File: abb/Inoue.png Graphic file (type png)
  <use abb/Inoue.png>
-Package pdftex.def Info: abb/Inoue.png used on input line 402.
-(pdftex.def)             Requested size: 161.38739pt x 148.0pt.
+Package pdftex.def Info: abb/Inoue.png used on input line 437.
+(pdftex.def)             Requested size: 221.90938pt x 203.5pt.
 
-<abb/Fourier.pdf, id=49, 642.4pt x 481.8pt>
+<abb/Durchschnitt.pdf, id=47, 361.35pt x 216.81pt>
+File: abb/Durchschnitt.pdf Graphic file (type pdf)
+ <use abb/Durchschnitt.pdf>
+Package pdftex.def Info: abb/Durchschnitt.pdf used on input line 437.
+(pdftex.def)             Requested size: 246.67966pt x 148.0pt.
+
+<abb/Fourier.pdf, id=48, 642.4pt x 481.8pt>
 File: abb/Fourier.pdf Graphic file (type pdf)
  <use abb/Fourier.pdf>
-Package pdftex.def Info: abb/Fourier.pdf used on input line 402.
-(pdftex.def)             Requested size: 197.32852pt x 148.0pt.
+Package pdftex.def Info: abb/Fourier.pdf used on input line 437.
+(pdftex.def)             Requested size: 222.00072pt x 166.5pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--402
+Overfull \hbox (4.39998pt too wide) in paragraph at lines 437--437
+[][] 
+ []
+
+<abb/Trajektorie_gross.png, id=49, 523.9575pt x 309.3156pt>
+File: abb/Trajektorie_gross.png Graphic file (type png)
+
+<use abb/Trajektorie_gross.png>
+Package pdftex.def Info: abb/Trajektorie_gross.png used on input line 437.
+(pdftex.def)             Requested size: 329.88817pt x 194.75186pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 437--437
+
+ []
+
+<abb/grid640_theta.png, id=50, 677.1699pt x 545.6385pt>
+File: abb/grid640_theta.png Graphic file (type png)
+
+<use abb/grid640_theta.png>
+Package pdftex.def Info: abb/grid640_theta.png used on input line 437.
+(pdftex.def)             Requested size: 263.9206pt x 212.65662pt.
+
+<abb/grid640_z.png, id=51, 680.7834pt x 547.0839pt>
+File: abb/grid640_z.png Graphic file (type png)
+ <use abb/grid640_z.png>
+Package pdftex.def Info: abb/grid640_z.png used on input line 437.
+(pdftex.def)             Requested size: 263.9206pt x 212.08464pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 437--437
+
+ []
+
+<abb/movie.png, id=52, 256.0767pt x 43.8438pt>
+File: abb/movie.png Graphic file (type png)
+ <use abb/movie.png>
+Package pdftex.def Info: abb/movie.png used on input line 437.
+(pdftex.def)             Requested size: 734.02446pt x 125.68126pt.
+
+<abb/Movie_COCu.png, id=53, 2085.7122pt x 371.4678pt>
+File: abb/Movie_COCu.png Graphic file (type png)
+ <use abb/Movie_COCu.png>
+Package pdftex.def Info: abb/Movie_COCu.png used on input line 437.
+(pdftex.def)             Requested size: 734.02446pt x 130.72986pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 437--437
 
  []
 
 
-Overfull \hbox (4.39998pt too wide) in paragraph at lines 402--402
+Overfull \hbox (4.4pt too wide) in paragraph at lines 437--437
 [][] 
  []
 
 
-Overfull \hbox (4.4pt too wide) in paragraph at lines 432--432
+Overfull \hbox (4.4pt too wide) in paragraph at lines 467--467
 [][] 
  []
 
 
-Overfull \hbox (4.4pt too wide) in paragraph at lines 432--432
+Overfull \hbox (4.4pt too wide) in paragraph at lines 467--467
 [][] 
  []
 
@@ -1280,10 +1288,11 @@ Overfull \hbox (4.4pt too wide) in paragraph at lines 432--432
 odifiedSurfScheme.png> <./abb/one.png> <./abb/fermi.png> <./abb/TTM_1pulse-eps-
 converted-to.pdf> <./abb/6dimScheme.png> <./abb/fig_1b.pdf> <./abb/grid640_pot_
 3.png> <./abb/Part1SurfScheme.png> <./abb/2TM_equs.png> <./abb/Part2SurfScheme.
-png> <./abb/Langevin_eq.png> <./abb/Part3SurfScheme.png> <./abb/fig_8.png> <./a
-bb/fig_9-eps-converted-to.pdf> <./abb/fig_11a-eps-converted-to.pdf> <./abb/Traj
-ektorie.png> <./abb/movie.png> <./abb/Inoue.png (PNG copy)> <./abb/Fourier.pdf>
-] (./posterSTC2018.aux)
+png> <./abb/Langevin_eq.png> <./abb/Part3SurfScheme.png> <./abb/fig_9-eps-conve
+rted-to.pdf> <./abb/fig_8.png> <./abb/Z-Histogramme.png (PNG copy)> <./abb/Inou
+e.png (PNG copy)> <./abb/Durchschnitt.pdf> <./abb/Fourier.pdf> <./abb/Trajektor
+ie_gross.png (PNG copy)> <./abb/grid640_theta.png> <./abb/grid640_z.png> <./abb
+/movie.png> <./abb/Movie_COCu.png>] (./posterSTC2018.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 26.72pt have occurred.
@@ -1293,13 +1302,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 19109 strings out of 493089
- 403554 string characters out of 6144303
- 549233 words of memory out of 5000000
- 22129 multiletter control sequences out of 15000+600000
+ 19129 strings out of 493089
+ 403986 string characters out of 6144303
+ 548473 words of memory out of 5000000
+ 22145 multiletter control sequences out of 15000+600000
  65509 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,18n,84p,816b,1366s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,20n,84p,816b,1368s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf
 /fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/public
 /amsfonts/cm/cmcsc10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi1
@@ -1311,10 +1320,10 @@ texmf/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cms
 y9.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
 texmf/fonts/type1/public/cm-super/sfrm2986.pfb>
-Output written on posterSTC2018.pdf (1 page, 2807260 bytes).
+Output written on posterSTC2018.pdf (1 page, 4001840 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
+ 193 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 209 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 
