@@ -101,7 +101,7 @@
 		}
 		\vspace{.5cm}
 
-		\innerblock{How do fs-lasers affect adsorbate-metal systems?}{
+		\innerblock{How do fs-Lasers affect Adsorbate-Metal Systems?}{
 % 		  \innerblock{How fs-laser-irradiation affects metal surfaces}{
 % 		  \innerblock{What happens upon FL-irradiation of metal surfaces?}{
 		  \includegraphics[width=.90\colwidth]{abb/modifiedSurfScheme.png}		    
@@ -194,39 +194,49 @@
 		\vspace{.5cm}
 	  
 		\innerblock{Two-Temperature Model (2TM)\cite{anisimov:74}}{
-		  \begin{minipage}[t]{.68\colwidth}
+		\begin{adjustbox}{valign=t}
+                    \begin{minipage}[t]{.22\colwidth}
+                          \includegraphics[width=.24\colwidth]{abb/Part1SurfScheme.png}
+%                               \includegraphics[width=.3\colwidth]{abb/2TM_equs.png}
+                        \end{minipage}
+                 \end{adjustbox}
+		\begin{adjustbox}{valign=t}
+                  \begin{minipage}[t]{.47\colwidth}
+                        \vspace*{.3cm}
 			\begin{itemize}
-			  \item describes {\bf interaction} of {\bf electrons} with {\bf phonons} and {\bf laser} 
+			  \item simulates {\bf interaction} of {\bf electrons} with {\bf phonons} and {\bf laser} 
+			   $\Rightarrow$ {\bf gives $\boldsymbol{T}_\mathbf{el}$ and $\boldsymbol{T}_\mathbf{ph}$ as $\boldsymbol{f(z,t)}$} 
 			\end{itemize}			  
 			\begin{center}
-			  \includegraphics[width=.65\colwidth]{abb/2TM_equs.png}
-			\end{center}
-		  \end{minipage}
-		  \begin{adjustbox}{valign=t}
-			\begin{minipage}[t]{.25\colwidth}
-			  \includegraphics[width=.25\colwidth]{abb/Part1SurfScheme.png}
-% 				\includegraphics[width=.3\colwidth]{abb/2TM_equs.png}
-			\end{minipage}
-		  \end{adjustbox}
-% 			\end{adjustbox}
+			  \includegraphics[width=.42\colwidth]{abb/2TM_equs.png}
+			\end{center}			
+                  \end{minipage}
+			\end{adjustbox}
 % 		  \vspace{-1.2\baselineskip}
-		  \begin{itemize}
-			\item[$\Rightarrow$] {\bf get $\boldsymbol{T}_\mathbf{el}$ and $\boldsymbol{T}_\mathbf{ph}$ as $\boldsymbol{f(z,t)}$} from laser parameters and material properties 
-% 			{\normalsize
-% 			\begin{itemize}
-% 			  \begin{minipage}[t]{.52\colwidth}
-% 				\item laser wavelength $\lambda$ (affects penetretion depth into material)
-% 				\item (effective) absorbed fluence $F$ (energy/area)
-% 				\item pulse duration $\tau$ (all three appear in the ``source term'' $S(z, t)$)
-% 			  \end{minipage}
-% 			  \begin{minipage}[t]{.5\colwidth}
-% 				\item electron and phonon heat capacities $C_\mathrm{el}$ and $C_\mathrm{ph}$
-% 				\item electron heat conductivity $\kappa$ 			
-% 				\item electron-phonon coupling constant $g$
-% 			  \end{minipage}
-% 			\end{itemize}				
-% 			}
-		  \end{itemize}	
+                  \begin{adjustbox}{valign=t}
+                    \begin{minipage}[t]{.24\colwidth}
+%                       \begin{itemize}
+%                             \item[$\Rightarrow$]
+    %                       {\normalsize
+                          \vspace*{.3cm}
+                          \begin{itemize}
+    %                         \begin{minipage}[t]{.52\colwidth}
+    %                               \item laser wavelength $\lambda$ (affects penetretion depth into material)
+    %                               \item (effective) absorbed fluence $F$ (energy/area)
+    %                               \item pulse duration $\tau$ (all three appear in the ``source term'' $S(z, t)$)
+    %                         \end{minipage}
+    %                         \begin{minipage}[t]{.5\colwidth}
+                                  \item electron and phonon heat capacities $C_\mathrm{el}$ and $C_\mathrm{ph}$
+                                  \item elec. heat conductivity $\kappa$                       
+                                  \item elec.-phonon coupling $g$
+                                  \item laser source term S(z,t) 
+    %                         \end{minipage}
+                          \end{itemize}                           
+    %                       }
+%                       \end{itemize}                           
+                        \end{minipage}
+                 \end{adjustbox}
+
 
 		}
 		\vspace{.5cm}
@@ -234,7 +244,7 @@
 		\innerblock{Electronic Friction: Langevin Dynamics\cite{headgordon:95} and Local~Density~Friction~Approximation~(LDFA)\cite{juaristi:08}}{
 		  \begin{adjustbox}{valign=t}
 			\begin{minipage}[t]{.26\colwidth}
-			  \includegraphics[width=.25\colwidth]{abb/Part2SurfScheme.png}
+			  \includegraphics[width=.24\colwidth]{abb/Part2SurfScheme.png}
 % 				\includegraphics[width=.3\colwidth]{abb/2TM_equs.png}
 			\end{minipage}
 		  \end{adjustbox}
@@ -244,7 +254,7 @@
 % 				\vspace{.2\baselineskip}
 % 				\item describes interaction of  electron-hole-pairs with molecule
 			\end{itemize}
-			\vspace*{-.1\baselineskip}			  
+					  
 			\includegraphics[width=.65\colwidth]{abb/Langevin_eq.png}
 		  \end{minipage}
 		  \vspace*{-.3\baselineskip}
