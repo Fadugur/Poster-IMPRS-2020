@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/TeX Live for SUSE Linux) (preloaded format=pdflatex 2018.1.23)  15 SEP 2018 05:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/TeX Live for SUSE Linux) (preloaded format=pdflatex 2018.1.23)  15 SEP 2018 06:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1125,10 +1125,10 @@ File: abb/Langevin_eq.png Graphic file (type png)
 
 <use abb/Langevin_eq.png>
 Package pdftex.def Info: abb/Langevin_eq.png used on input line 307.
-(pdftex.def)             Requested size: 911.97458pt x 166.65135pt.
+(pdftex.def)             Requested size: 940.0416pt x 171.78152pt.
 
-Overfull \hbox (70.13542pt too wide) in paragraph at lines 307--307
-[][] 
+Overfull \hbox (30.65388pt too wide) in paragraph at lines 307--307
+[] [] 
  []
 
 
@@ -1141,12 +1141,7 @@ File: abb/Part3SurfScheme.png Graphic file (type png)
 
 <use abb/Part3SurfScheme.png>
 Package pdftex.def Info: abb/Part3SurfScheme.png used on input line 307.
-(pdftex.def)             Requested size: 350.76274pt x 230.7567pt.
-
-Overfull \hbox (14.0228pt too wide) in paragraph at lines 307--307
-[][] 
- []
-
+(pdftex.def)             Requested size: 336.73994pt x 221.53125pt.
 
 Overfull \hbox (2.60828pt too wide) in paragraph at lines 307--307
 [] [] 
@@ -1298,11 +1293,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 19103 strings out of 493089
- 403494 string characters out of 6144303
- 545927 words of memory out of 5000000
- 22126 multiletter control sequences out of 15000+600000
- 62674 words of font info for 127 fonts, out of 8000000 for 9000
+ 19107 strings out of 493089
+ 403529 string characters out of 6144303
+ 545946 words of memory out of 5000000
+ 22127 multiletter control sequences out of 15000+600000
+ 65509 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,84p,816b,1366s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf
@@ -1316,7 +1311,7 @@ texmf/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cms
 y9.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
 texmf/fonts/type1/public/cm-super/sfrm2986.pfb>
-Output written on posterSTC2018.pdf (1 page, 2805537 bytes).
+Output written on posterSTC2018.pdf (1 page, 2805386 bytes).
 PDF statistics:
  185 PDF objects out of 1000 (max. 8388607)
  97 compressed objects within 1 object stream
