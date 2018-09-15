@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/TeX Live for SUSE Linux) (preloaded format=pdflatex 2018.1.23)  15 SEP 2018 06:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/TeX Live for SUSE Linux) (preloaded format=pdflatex 2018.1.23)  15 SEP 2018 07:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1156,10 +1156,10 @@ Overfull \hbox (4.39998pt too wide) in paragraph at lines 307--307
 File: abb/fig_8.png Graphic file (type png)
  <use abb/fig_8.png>
 Package pdftex.def Info: abb/fig_8.png used on input line 402.
-(pdftex.def)             Requested size: 392.19128pt x 275.91751pt.
+(pdftex.def)             Requested size: 428.85211pt x 301.70952pt.
 
-Underfull \hbox (badness 1226) in paragraph at lines 402--402
-\T1/aer/m/n/29.86 des-orp-tion yield close
+Underfull \hbox (badness 10000) in paragraph at lines 402--402
+[]\T1/aer/m/n/29.86 fluence de-pen-dence of
  []
 
 Package epstopdf Info: Source file: <abb/fig_9.eps>
@@ -1178,7 +1178,7 @@ File: abb/fig_9-eps-converted-to.pdf Graphic file (type pdf)
 <use abb/fig_9-eps-converted-to.pdf>
 Package pdftex.def Info: abb/fig_9-eps-converted-to.pdf used on input line 402.
 
-(pdftex.def)             Requested size: 362.03867pt x 270.77023pt.
+(pdftex.def)             Requested size: 395.8809pt x 296.08363pt.
 Package epstopdf Info: Source file: <abb/fig_11a.eps>
 (epstopdf)                    date: 2016-07-19 10:41:51
 (epstopdf)                    size: 25081 bytes
@@ -1196,7 +1196,7 @@ File: abb/fig_11a-eps-converted-to.pdf Graphic file (type pdf)
 <use abb/fig_11a-eps-converted-to.pdf>
 Package pdftex.def Info: abb/fig_11a-eps-converted-to.pdf used on input line 40
 2.
-(pdftex.def)             Requested size: 286.61105pt x 273.33112pt.
+(pdftex.def)             Requested size: 313.40257pt x 298.88506pt.
 
 Overfull \hbox (4.39998pt too wide) in paragraph at lines 402--402
 [][] 
@@ -1207,30 +1207,30 @@ File: abb/Trajektorie.png Graphic file (type png)
 
 <use abb/Trajektorie.png>
 Package pdftex.def Info: abb/Trajektorie.png used on input line 402.
-(pdftex.def)             Requested size: 392.19128pt x 275.17819pt.
+(pdftex.def)             Requested size: 428.85211pt x 300.89995pt.
 
-Underfull \hbox (badness 1320) in paragraph at lines 402--402
+Underfull \hbox (badness 10000) in paragraph at lines 402--402
+[]\T1/aer/m/n/29.86 typical tra-jec-tory:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--402
 \T1/aer/m/n/29.86 when CO moves
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 402--402
+[]\T1/aer/m/n/29.86 overall, very large
  []
 
 <abb/movie.png, id=47, 256.0767pt x 43.8438pt>
 File: abb/movie.png Graphic file (type png)
  <use abb/movie.png>
 Package pdftex.def Info: abb/movie.png used on input line 402.
-(pdftex.def)             Requested size: 671.2757pt x 114.9371pt.
+(pdftex.def)             Requested size: 734.02446pt x 125.68126pt.
 
-Overfull \hbox (1.37401pt too wide) in paragraph at lines 402--402
+Overfull \hbox (4.4pt too wide) in paragraph at lines 402--402
 [][] 
- []
-
-
-Overfull \hbox (4.39998pt too wide) in paragraph at lines 402--402
-[][] 
- []
-
-
-Overfull \hbox (0.81541pt too wide) in paragraph at lines 402--402
-[] |  []
  []
 
 
@@ -1265,12 +1265,12 @@ Overfull \hbox (4.39998pt too wide) in paragraph at lines 402--402
  []
 
 
-Overfull \hbox (4.39998pt too wide) in paragraph at lines 427--427
+Overfull \hbox (4.4pt too wide) in paragraph at lines 430--430
 [][] 
  []
 
 
-Overfull \hbox (4.39998pt too wide) in paragraph at lines 427--427
+Overfull \hbox (4.4pt too wide) in paragraph at lines 430--430
 [][] 
  []
 
@@ -1293,10 +1293,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 19107 strings out of 493089
- 403529 string characters out of 6144303
- 545957 words of memory out of 5000000
- 22127 multiletter control sequences out of 15000+600000
+ 19109 strings out of 493089
+ 403554 string characters out of 6144303
+ 549137 words of memory out of 5000000
+ 22129 multiletter control sequences out of 15000+600000
  65509 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,84p,816b,1366s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1311,7 +1311,7 @@ texmf/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cms
 y9.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
 texmf/fonts/type1/public/cm-super/sfrm2986.pfb>
-Output written on posterSTC2018.pdf (1 page, 2805375 bytes).
+Output written on posterSTC2018.pdf (1 page, 2806945 bytes).
 PDF statistics:
  185 PDF objects out of 1000 (max. 8388607)
  97 compressed objects within 1 object stream

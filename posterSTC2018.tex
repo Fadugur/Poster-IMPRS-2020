@@ -308,8 +308,8 @@
   \end{columns}
 %     \vspace*{1\baselineskip}
   \begin{columns}
-  \column{.66}
-  \block[titleoffsety=3cm,bodyoffsety=3cm,titleoffsetx=-.182\colwidth,titlewidthscale=.4915,]{Results}{
+  \column{.72}
+  \block[titleoffsety=3cm,bodyoffsety=3cm,titleoffsetx=-.24\colwidth,titlewidthscale=.511,]{Results}{
 	\begin{adjustbox}{valign=t}
 	\begin{minipage}[t]{.49\colwidth}
 	  \innerblock{Desorption (Data for Ru)}{
@@ -400,27 +400,30 @@
           \end{adjustbox}          
 	}
   }
-  \column{.33}
+  \column{.28}
   \block{}{
 	\innerblock{Conclusions}{
 	\begin{itemize}
-	  \item 6D Langevin dynamics of CO on Ru and Cu
-	  \item based on first principles, no ``free'' parameters
-	  \item accounting for (via LDFA) electronic friction, hot electron excitation and (via GLO) substrate motion
-	  \item allows for detailed time- and space-resolved insights
-	  \item no physisorbed state, molecules desorp directly 
+	  \item {\bf system: CO} on {\bf Ru(001) or Cu(100)} 
+	  \item {\bf full-dimensional (6D)} simulation of \newline dynamics driven by {\bf fs-laser irradiation} 
+	  \item {\bf first principles}, no ``free'' parameters
+	  \item accounting for {\bf1) electronic friction} and excitation by hot electron-hole pairs (via LDFA and the Langevin approach) and {\bf 2) substrate motion} (via GLO)
+	  \item detailed time- and space-resolved insights
+% 	  \item no physisorbed state, molecules desorp directly 
+%         time for more COCu gang stuff! =)
 	\end{itemize}
 	}
 	\vspace{1.7cm}
 	\innerblock{Outlook}{
 	\begin{itemize}
 % 	  \item 
-	  \item better electonic friction ($\eta(T_\mathrm{el})$ and beyond LDFA)
-	  $\Rightarrow$ Long term goal: use tensorial friction (exact)
-	  \item non-equilibrium lattice model (NLM) instead 2TM 
-	  \item simulate other coverages (bigger super cells)
-	  \item simulate bigger systems (CO + H; hydrocarbons) 
-	  \item include interaction between adsorbate molecules
+	  \item better description of electronic friction: $\boldsymbol{\eta}_\mathbf{el}$ {\bf as} $\boldsymbol{f}(\boldsymbol{T}_\mathbf{el})$ and going {\bf beyond LDFA}
+	  $\Rightarrow$ Long term goal: {\bf friction tensors}\cite{maurer:16}  
+	  \item further {\bf2TM improvements}, consider {\bf non-equilibrium~lattice~(NLM)}\cite{waldecker:16}  
+	  \item simulate {\bf other coverages} and interaction between adsorbate molecules 
+	  \newline $\Rightarrow$ bigger super cells needed
+	  \item go to {\bf larger} or more complex {\bf systems} hydrocarbons; coadsorbate CO + H or O  
+% 	  \item include interaction   
 	\end{itemize}
 
 	}
@@ -478,7 +481,13 @@
 		H.F. Busnengo, M.A. Di Césare, W. Dong \emph{et al.},
 		\emph{Phys.Rev.B} \textbf{72}, 125411 (2005).
 		
-
+		\bibitem{maurer:16}
+                R. J. Maurer, M. Askerka, V. S. Batista, J. C. Tully
+                \emph{Phys.Rev.B} \textbf{94}, 115432 (2016).
+		
+                \bibitem{waldecker:16}
+                L. Waldecker, R. Bertoni, R. Ernstorfer, J. Vorberger
+                \emph{Phys.Rev.X} \textbf{6}, 021003 (2016).
 		
       \end{thebibliography}  
     \end{multicols}
